@@ -205,3 +205,15 @@ SOFTWARE.
     border-width: 0 1px 1px;
   }
 }
+
+/* --- */
+
+.recon-navbar-logo {
+  background-color: #FFF;
+}
+
+body {
+  background-color: #FFF;
+  background-image: url(/recon.ui/img/background.png);
+  background-repeat: no-repeat;
+}

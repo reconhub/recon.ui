@@ -10,7 +10,8 @@ URL: http://www.repidemicsconsortium.org/recon.ui/
 BugReports: http://github.com/reconhub/recon.ui/issues
 RoxygenNote: 6.0.1
 Imports:
-    shiny
+    shiny,
+    htmltools
 Suggests:
     outbreaks,
     DT,

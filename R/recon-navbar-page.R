@@ -1,11 +1,15 @@
 #' @export
 reconNavbarPage <- function(title, ...) {
-  css_path <- system.file("www/css/style.css", package = "recon.ui")
-  np <- navbarPage(title, theme = css_path, ...)
-  np[[1]] <- htmltools::tagAppendChild(np[[1]], shiny::includeCSS(css_path))
+  np <- shiny::navbarPage(title, theme = "/recon.ui/css/style.css", ...)
   nav_element <- np[[3]][[1]]
   old_class <- htmltools::tagGetAttribute(nav_element, "class")
-  np[[3]][[1]] <- htmltools::tagAppendAttributes(nav_element,
+  np[[3]][[1]] <- htmltools::tagAppendAttributes(np[[3]][[1]],
                                                  class = "navbar-custom")
+
+  logo <- htmltools::tags$ul(
+    htmltools::tags$img(src = "recon.ui/img/logo.png"),
+    class = "navbar-right recon-navbar-logo"
+  )
+  np[[3]][[1]]$children[[1]] <- htmltools::tagAppendChild(np[[3]][[1]]$children[[1]], logo)
   np
 }
