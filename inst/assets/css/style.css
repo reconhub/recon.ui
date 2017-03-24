@@ -28,6 +28,7 @@ SOFTWARE.
 
 .navbar-custom {
   background: #314f96;
+  background: linear-gradient(to right, #314f96, white);
   border-bottom: 1px solid #294481;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -208,12 +209,9 @@ SOFTWARE.
 
 /* --- */
 
-.recon-navbar-logo {
-  background-color: #FFF;
-}
-
 body {
   background-color: #FFF;
+
   background-image: url(/recon.ui/img/background.png);
   background-repeat: no-repeat;
 }
