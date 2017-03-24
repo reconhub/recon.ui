@@ -1,20 +1,21 @@
 Package: recon.ui
 Type: Package
-Title: Template of Shiny GUI for RECON Packages  
+Title: Template of Shiny GUI for RECON Packages
 Version: 1.0.0
 Authors@R: c(person("Thibaut", "Jombart", role = c("aut", "cre"), email =
-  "thibautjombart@gmail.com"))
+  "thibautjombart@gmail.com"),
+  person("Dean", "Attali", role = c("aut", "cre"), email =
+  "daattali@gmail.com"))
 Description: Provides skeletons for shiny GUI for RECON package.
 License: MIT + file LICENSE
 URL: http://www.repidemicsconsortium.org/recon.ui/
 BugReports: http://github.com/reconhub/recon.ui/issues
-RoxygenNote: 6.0.1
+RoxygenNote: 5.0.1
 Imports:
-    shiny
+    shiny,
+    whisker
 Suggests:
     outbreaks,
     DT,
     plotly
-Remotes:
-    reconhub/shinyHelpers
-
+Remotes: reconhub/shinyHelpers
