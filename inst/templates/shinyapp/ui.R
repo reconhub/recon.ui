@@ -1,8 +1,15 @@
 recon.ui::reconNavbarPage(
   "{{{ pkg_name }}}",
+
   tabPanel(
     "Data",
-    dataimport$ui()
+
+    # Data import module
+    dataimport$ui(),
+    br(),
+
+    # Column (variable) mappin module
+    uiOutput("mapcolumns_output")
   ),
 
   tabPanel(
